@@ -223,9 +223,9 @@ body main {
   box-shadow: -8px 0 10px -8px var(--color-neutral-600),
     8px 0 10px -8px var(--color-neutral-600);
 }
-@media (width >= 64rem) {
+@media (width >= 72rem) {
   body main {
-    width: var(--container-5xl);
+    width: var(--container-6xl);
   }
 }
 

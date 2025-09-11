@@ -1,10 +1,11 @@
-import {getIronSession, SessionOptions} from 'iron-session';
-import {cookies} from 'next/headers';
+import { getIronSession, SessionOptions } from 'iron-session';
+import { cookies } from 'next/headers';
 
 export interface SessionData {
   auth: boolean;
   authType: string;
   lang?: string;
+  site?: string;
 }
 
 export const sessionOptions: SessionOptions = {

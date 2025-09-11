@@ -1,12 +1,8 @@
 // data
-import {getContent as layoutContent} from '@/data/layout';
-import {getContent as messageContent} from '@/data/message';
-import {getContent as homeContent} from '@/data/home';
+import { getContent as layoutContent } from '@/data/layout';
+import { getContent as messageContent } from '@/data/message';
 
-export function l10n(
-  contentCode: string,
-  lang: string = 'en-US',
-): string {
+export function l10n(contentCode: string, lang: string = 'en-US'): string {
   if (!contentCode.includes('-')) {
     throw new Error(`Invalid contentCode: ${contentCode}`);
   }
@@ -24,9 +20,6 @@ export function l10n(
       break;
     case 'message':
       content = messageContent();
-      break;
-    case 'home':
-      content = homeContent();
       break;
     default:
       throw new Error(`Unsupported content group: ${groupKey}`);

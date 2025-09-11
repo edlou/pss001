@@ -4,15 +4,6 @@ import '@/ui/molecules/footer/styles.css';
 // nextjs
 import Link from 'next/link';
 
-// ui - molecules
-// import LanguageToggle from '@/ui/molecules/languageToggle';
-
-// lib
-import {getSite} from '@/lib/getSite';
-
-// utils
-import {l10n} from '@/lib/l10n';
-
 // type
 type EntityProps = {
   url: string;
@@ -35,13 +26,15 @@ export default async function Footer({
   const classes = ['footerPage'];
   if (className) classes.push(className);
 
-  const {lang} = await getSite();
-
   return (
     <footer role="contentinfo" className={classes.join(' ')} id={id}>
       <div className="wrapper">
-        <p><small>&copy;{year} <Link href={entity.url}>{entity.name}</Link>. {l10n('layout-footer-legal', lang)}</small></p>
-        {/*<LanguageToggle />*/}
+        <p>
+          <small>
+            &copy;{year} <Link href={entity.url}>{entity.name}</Link>. All
+            rights reserved.
+          </small>
+        </p>
       </div>
     </footer>
   );
