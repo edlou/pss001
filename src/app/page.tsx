@@ -24,7 +24,7 @@ export type PageProps = {
 
 export default async function MainPage({ searchParams }: PageProps) {
   const params = searchParams ? await searchParams : undefined;
-  console.log(params);
+  console.log('LOG', params);
 
   return (
     <>
