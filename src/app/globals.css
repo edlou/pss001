@@ -353,6 +353,9 @@ a:active {
   cursor: pointer;
   justify-content: space-between;
 }
+#pageHome #faq details:hover {
+  background-color: var(--color-neutral-800);
+}
 #pageHome #faq details summary span:first-child {
   color: var(--color-neutral-100);
   font-weight: 500;
