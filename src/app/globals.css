@@ -317,3 +317,26 @@ a:active {
 #pageHome #contact iframe {
   height: 400px;
 }
+#pageHome #faq h4 {
+  margin-top: calc(var(--spacing) * 8);
+  margin-bottom: calc(var(--spacing) * 4);
+}
+#pageHome #faq details {
+  border: 1px solid var(--color-neutral-300);
+  border-radius: var(--radius-lg);
+  padding: calc(var(--spacing) * 4);
+  margin-bottom: calc(var(--spacing) * 4);
+  color: var(--color-neutral-300);
+}
+#pageHome #faq details summary {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+}
+#pageHome #faq details summary span:first-child {
+  color: var(--color-neutral-100);
+  font-weight: 500;
+}
+#pageHome #faq details p {
+  margin-top: calc(var(--spacing) * 2);
+}

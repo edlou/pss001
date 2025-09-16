@@ -28,6 +28,7 @@ import ContainerGroup from '@/ui/molecules/containerGroup';
 import Container from '@/ui/molecules/container';
 import Testimonial from '@/ui/molecules/testimonial';
 import HCard from '@/ui/molecules/hcard';
+import FAQ from '@/ui/molecules/faq';
 import Header from '@/ui/molecules/header';
 import Footer from '@/ui/molecules/footer';
 
@@ -139,6 +140,13 @@ export default async function MainPage({ searchParams }: PageProps) {
             </dl>
           </Container>
           <Container>{content.googleMap}</Container>
+        </ContainerGroup>
+
+        <ContainerGroup id="faq">
+          <Container>
+            <Heading level={4}>Frequently Asked Questions</Heading>
+            <FAQ />
+          </Container>
         </ContainerGroup>
       </main>
       <Footer
