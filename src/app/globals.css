@@ -211,6 +211,26 @@ body {
   background-color: var(--color-neutral-900);
   font-style: normal;
   font-variation-settings: 'wdth' 100;
+  background-color: #111111;
+  opacity: 1;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #222222 25%,
+      transparent 25%,
+      transparent 75%,
+      #222222 75%,
+      #222222
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #222222 25%,
+      #111111 25%,
+      #111111 75%,
+      #222222 75%,
+      #222222
+    );
+  background-position: 0 0, 100px 100px;
+  background-size: 200px 200px;
 }
 
 body main {
