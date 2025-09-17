@@ -66,6 +66,11 @@ export default async function MainPage() {
               </Link>
             </li>
             <li>
+              <Link href="/?site=wqs001">
+                Whipple Quality Smog
+              </Link>
+            </li>
+            <li>
               <Link href="/?site=client001">Client Template</Link>
             </li>
             <li>
