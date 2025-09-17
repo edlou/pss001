@@ -8,6 +8,7 @@ export type SiteKey =
   | 'wse001' // Winton Smog Express
   | 'jst001' // Jackson Smog Test Only Centre, Inc
   | 'wqs001' // Whipple Quality Smog
+  | 'bas001' // Bay Area Star Smog
   | 'client001' // Client Template
   | 'efx'; // EFX Template
 
@@ -289,7 +290,6 @@ export const siteContent: Record<SiteKey, SiteContent> = {
       },
     ],
   },
-//
   wqs001: {
     businessName: 'Whipple Quality Smog',
     street1: '2408 Whipple Rd  , ',
@@ -333,6 +333,49 @@ export const siteContent: Record<SiteKey, SiteContent> = {
     ],
   },
 //
+  bas001: {
+    businessName: 'Bay Area Star Smog',
+    street1: '15768 E 14th St , ',
+    locality: 'San Leandro',
+    region: 'CA',
+    postalCode: '94578',
+    phone: '5102785459',
+    email: 'info@client-smog.com',
+    headerName: <> Bay Area Star Smog </>,
+    footerEntityName: 'Bay Area Star Smog',
+    googleMap: (
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d928.3068609108005!2d-122.12236045108703!3d37.701034843035494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f91d1e6515f23%3A0x245d71e643d5abe5!2s15768%20E%2014th%20St%2C%20San%20Leandro%2C%20CA%2094578!5e0!3m2!1sen!2sus!4v1758143394652!5m2!1sen!2sus"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    testimonials: [
+      {
+        quote:
+          "Very friendly, quick and efficient . Took 15minutes to complete my smog check. Would recommend for quick service.",
+        author: 'Precious E.',
+        date: '2025',
+      },
+      {
+        quote:
+          "Looking online for a star smog station. Found Bay Area Star Smog super close to my house. I made an online appt. Great customer service. Definitely return if need smog check. And as for the value, I got a discount for making an online appointment. Great Value!!",
+        author: 'Olivia A.',
+        date: '2025',
+      },
+      {
+        quote:
+          "The new owner Jason is very helpful, friendly and knowledgeable. I needed a smog and he got me in and out in no time, I'll be recommending them to others.",
+        author: 'Angel S.',
+        date: '2025',
+      },
+    ],
+  },
+  //
   client001: {
     businessName: 'Client Smog Station',
     street1: '38888 Fremont Blvd,',
