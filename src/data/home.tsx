@@ -7,6 +7,7 @@ export type SiteKey =
   | 'jus001' // Just Smog
   | 'wse001' // Winton Smog Express
   | 'jst001' // Jackson Smog Test Only Centre, Inc
+  | 'wqs001' // Whipple Quality Smog
   | 'client001' // Client Template
   | 'efx'; // EFX Template
 
@@ -288,6 +289,50 @@ export const siteContent: Record<SiteKey, SiteContent> = {
       },
     ],
   },
+//
+  wqs001: {
+    businessName: 'Whipple Quality Smog',
+    street1: '2408 Whipple Rd  , ',
+    locality: 'Hayward',
+    region: 'CA',
+    postalCode: '94544',
+    phone: '5105563330',
+    email: 'info@client-smog.com',
+    headerName: <> Whipple Quality Smog </>,
+    footerEntityName: 'Whipple Quality Smog',
+    googleMap: (
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.674197476968!2d-122.06142827669136!3d37.605823134998595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f954150671093%3A0xe0a9a2f57b44e2a7!2sWhipple%20Quality%20Smog!5e0!3m2!1sen!2sus!4v1758138827086!5m2!1sen!2sus"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    testimonials: [
+      {
+        quote:
+          "Fast efficient service. It is a hidden gem. Signage a little hard to find. Close to the major freeway.",
+        author: 'Vilma A.',
+        date: '2025',
+      },
+      {
+        quote:
+          "Most competitive prices for smog check in the area. Please be considerate and pay in cash if possible since he is already offering discounted rates. Nick was quick, efficient and very nice. No appointment needed. Just make sure to call before going. Highly recommend.",
+        author: 'Aman K.',
+        date: '2025',
+      },
+      {
+        quote:
+          "super nice and sweet staff!! the smog took 10 mins and we will ALWAYS be coming back here :D",
+        author: 'MJ T.',
+        date: '2025',
+      },
+    ],
+  },
+//
   client001: {
     businessName: 'Client Smog Station',
     street1: '38888 Fremont Blvd,',
