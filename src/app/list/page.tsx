@@ -35,13 +35,31 @@ import { getSession } from '@/lib/session';
 // data
 import { siteContent, SiteKey } from '@/data/home';
 
+const sites = Object.entries(siteContent).map(([key, value]) => ({
+  key: key,
+  businessName: value.businessName
+}));
+
+
+const renderSites = sites.map(site => {
+  return(
+    <li key={site.key}>
+      <Link href={`/?site=${site.key}`}>{site.businessName}</Link>
+    </li>
+  )
+})
+
 export default async function MainPage() {
+
+
   return (
     <main role="main">
       <ContainerGroup>
         <Container>
           <Heading level={3}>Client List</Heading>
           <ul>
+            {renderSites}
+{/*
             <li>
               <Link href="/?site=pss001"></Link>
             </li>
@@ -69,13 +87,13 @@ export default async function MainPage() {
               <Link href="/?site=wqs001">
                 Whipple Quality Smog
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/?site=client001">Client Template</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/?site=efx">EFX Template</Link>
-            </li>
+            </li> */}
           </ul>
         </Container>
       </ContainerGroup>
